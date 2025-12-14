@@ -1,0 +1,48 @@
+2025-12-09 23:10:27,271 - ERROR - Error while reading yaml file
+2025-12-09 23:10:51,821 - INFO - Succesfully read the yaml file
+2025-12-09 23:11:27,941 - INFO - Succesfully read the yaml file
+2025-12-09 23:12:02,124 - INFO - Succesfully read the yaml file
+2025-12-09 23:12:02,125 - INFO - Data ingestion started with bucket_aalokr_1 and file is Hotel_Reservations.csv
+2025-12-09 23:12:02,125 - INFO - Starting data ingestion process
+2025-12-09 23:12:05,013 - ERROR - Error while downloading the csv file
+2025-12-09 23:12:05,014 - ERROR - CustomException : Error in /Users/aalokr/My-Material/Projects/MLOPS/Project1/src/data_ingestion.py , line 25 : Failed to download the csv file
+2025-12-09 23:12:05,014 - INFO - Data ingestion completed
+2025-12-09 23:14:31,601 - INFO - Succesfully read the yaml file
+2025-12-09 23:14:31,601 - INFO - Data ingestion started with bucket_aalokr_1 and file is Hotel_Reservations.csv
+2025-12-09 23:14:31,601 - INFO - Starting data ingestion process
+2025-12-09 23:14:34,673 - ERROR - Error while downloading the csv file
+2025-12-09 23:14:34,673 - ERROR - CustomException : Error in /Users/aalokr/My-Material/Projects/MLOPS/Project1/src/data_ingestion.py , line 25 : Failed to download the csv file
+2025-12-09 23:14:34,673 - INFO - Data ingestion completed
+2025-12-09 23:16:56,116 - INFO - Succesfully read the yaml file
+2025-12-09 23:16:56,116 - INFO - Data ingestion started with bucket_aalokr_1 and file is Hotel_Reservations.csv
+2025-12-09 23:16:56,116 - INFO - Starting data ingestion process
+2025-12-09 23:16:58,231 - INFO - CSV file is succesfully downloaded to artifacts/raw/raw.csv
+2025-12-09 23:16:58,231 - INFO - Starting the splitting process
+2025-12-09 23:16:58,298 - ERROR - Wrror while spliting the data
+2025-12-09 23:16:58,298 - ERROR - CustomException : Error in /Users/aalokr/My-Material/Projects/MLOPS/Project1/src/data_ingestion.py , line 44 : Failed to split the data
+2025-12-09 23:16:58,299 - INFO - Data ingestion completed
+2025-12-09 23:22:02,971 - INFO - Succesfully read the yaml file
+2025-12-09 23:22:02,971 - INFO - Data ingestion started with bucket_aalokr_1 and file is Hotel_Reservations.csv
+2025-12-09 23:22:02,971 - INFO - Starting data ingestion process
+2025-12-09 23:22:05,510 - INFO - CSV file is succesfully downloaded to artifacts/raw/raw.csv
+2025-12-09 23:22:05,510 - INFO - Starting the splitting process
+2025-12-09 23:22:05,576 - ERROR - Error while spliting the data
+2025-12-09 23:22:05,577 - ERROR - CustomException : Error in /Users/aalokr/My-Material/Projects/MLOPS/Project1/src/data_ingestion.py , line 44 : Failed to split the data
+2025-12-09 23:22:05,578 - INFO - Data ingestion completed
+2025-12-09 23:22:19,686 - INFO - Succesfully read the yaml file
+2025-12-09 23:22:19,686 - INFO - Data ingestion started with bucket_aalokr_1 and file is Hotel_Reservations.csv
+2025-12-09 23:22:19,686 - INFO - Starting data ingestion process
+2025-12-09 23:22:22,298 - INFO - CSV file is succesfully downloaded to artifacts/raw/raw.csv
+2025-12-09 23:22:22,298 - INFO - Starting the splitting process
+2025-12-09 23:22:22,360 - ERROR - Error while spliting the data : name 'train_date' is not defined
+2025-12-09 23:22:22,360 - ERROR - CustomException : Error in /Users/aalokr/My-Material/Projects/MLOPS/Project1/src/data_ingestion.py , line 44 : Failed to split the data
+2025-12-09 23:22:22,362 - INFO - Data ingestion completed
+2025-12-09 23:23:43,167 - INFO - Succesfully read the yaml file
+2025-12-09 23:23:43,167 - INFO - Data ingestion started with bucket_aalokr_1 and file is Hotel_Reservations.csv
+2025-12-09 23:23:43,167 - INFO - Starting data ingestion process
+2025-12-09 23:23:46,792 - INFO - CSV file is succesfully downloaded to artifacts/raw/raw.csv
+2025-12-09 23:23:46,793 - INFO - Starting the splitting process
+2025-12-09 23:23:46,964 - INFO - Train data saved to artifacts/raw/train.csv
+2025-12-09 23:23:46,964 - INFO - Train data saved to artifacts/raw/test.csv
+2025-12-09 23:23:46,966 - INFO - Data ingestion completed sucesfully
+2025-12-09 23:23:46,966 - INFO - Data ingestion completed

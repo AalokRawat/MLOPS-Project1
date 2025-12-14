@@ -1,0 +1,51 @@
+2025-12-14 20:21:40,265 - INFO - Succesfully read the yaml file
+2025-12-14 20:21:40,266 - INFO - Data ingestion started with bucket_aalokr_1 and file is Hotel_Reservations.csv
+2025-12-14 20:21:40,266 - INFO - Starting data ingestion process
+2025-12-14 20:21:43,367 - ERROR - Error while downloading the csv file
+2025-12-14 20:21:43,367 - ERROR - CustomException : Error in /Users/aalokr/My-Material/Projects/MLOPS/Project1/src/data_ingestion.py , line 25 : Failed to download the csv file
+2025-12-14 20:21:43,367 - INFO - Data ingestion completed
+2025-12-14 20:21:43,370 - INFO - Succesfully read the yaml file
+2025-12-14 20:21:43,370 - INFO - Loading data from RAW directory
+2025-12-14 20:21:43,370 - INFO - Loading data
+2025-12-14 20:21:43,422 - INFO - Loading data
+2025-12-14 20:21:43,433 - INFO - Starting the data processing
+2025-12-14 20:21:43,433 - INFO - Dropping the columns
+2025-12-14 20:21:43,447 - INFO - Applying label encoding
+2025-12-14 20:21:43,456 - INFO - Doing skewness handling
+2025-12-14 20:21:43,458 - INFO - Starting the data processing
+2025-12-14 20:21:43,458 - INFO - Dropping the columns
+2025-12-14 20:21:43,461 - INFO - Applying label encoding
+2025-12-14 20:21:43,464 - INFO - Doing skewness handling
+2025-12-14 20:21:43,465 - INFO - Handling Imbalanced Data
+2025-12-14 20:21:43,559 - INFO - Data balanced sucesffuly
+2025-12-14 20:21:43,559 - INFO - Handling Imbalanced Data
+2025-12-14 20:21:43,569 - INFO - Data balanced sucesffuly
+2025-12-14 20:21:43,569 - INFO - Starting the features selection
+2025-12-14 20:21:45,630 - INFO - Saving our data in processed folder
+2025-12-14 20:21:45,679 - INFO - Data saved sucesfuly to artifacts/processed/processed_train.csv
+2025-12-14 20:21:45,680 - INFO - Saving our data in processed folder
+2025-12-14 20:21:45,694 - INFO - Data saved sucesfuly to artifacts/processed/processed_test.csv
+2025-12-14 20:21:45,694 - INFO - Data processing completed sucesfully
+2025-12-14 20:21:46,524 - INFO - Starting our Model Training pipeline
+2025-12-14 20:21:46,524 - INFO - Starting our MLFLOW experimentation
+2025-12-14 20:21:46,524 - INFO - Logging the training and testing datset to MLFLOW
+2025-12-14 20:21:46,536 - INFO - Loading data from artifacts/processed/processed_train.csv
+2025-12-14 20:21:46,536 - INFO - Loading data
+2025-12-14 20:21:46,550 - INFO - Loading data from artifacts/processed/processed_test.csv
+2025-12-14 20:21:46,550 - INFO - Loading data
+2025-12-14 20:21:46,555 - INFO - Data splitted sucefully for Model Training
+2025-12-14 20:21:46,556 - INFO - Intializing our model
+2025-12-14 20:21:46,556 - INFO - Starting our Hyperparamter tuning
+2025-12-14 20:21:46,556 - INFO - Starting our Hyperparamter tuning
+2025-12-14 20:22:09,114 - INFO - Hyperparamter tuning completed
+2025-12-14 20:22:09,114 - INFO - Best paramters are : {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-12-14 20:22:09,115 - INFO - Evaluating our model
+2025-12-14 20:22:09,146 - INFO - Accuracy Score : 0.8812128418549346
+2025-12-14 20:22:09,147 - INFO - Precision Score : 0.8656478102189781
+2025-12-14 20:22:09,147 - INFO - Recall Score : 0.9024970273483948
+2025-12-14 20:22:09,147 - INFO - F1 Score : 0.8836884387006636
+2025-12-14 20:22:09,147 - INFO - saving the model
+2025-12-14 20:22:09,164 - INFO - Model saved to artifacts/models/lgbm_model.pkl
+2025-12-14 20:22:09,164 - INFO - Logging the model into MLFLOW
+2025-12-14 20:22:09,168 - INFO - Logging Params and metrics to MLFLOW
+2025-12-14 20:22:09,182 - INFO - Model Training sucesfullly completed
