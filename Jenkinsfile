@@ -14,9 +14,7 @@ pipeline{
                 }
             }
         }
-    }
 
-        stages {
         stage('Setting up our virtual env and installing dep'){
             steps{
                 script{
