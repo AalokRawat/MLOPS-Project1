@@ -20,7 +20,7 @@ pipeline{
                 script{
                     echo('Setting up our virtual env and installing dep')
                     sh '''
-                    python -m venv ${VEND_DIR}
+                    python -m venv ${VENV_DIR}
                     . ${VENV_DIR}/bin/activate
                     pip install -upgrade pip
                     pip install -e .
