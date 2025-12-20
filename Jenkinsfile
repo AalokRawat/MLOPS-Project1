@@ -21,7 +21,7 @@ pipeline{
                     echo('Setting up our virtual env and installing dep')
                     sh '''
                     python -m venv ${VEND_DIR}
-                    . ${VEND_DIR}/bin/activate
+                    . ${VENV_DIR}/bin/activate
                     pip install -upgrade pip
                     pip install -e .
                     '''
