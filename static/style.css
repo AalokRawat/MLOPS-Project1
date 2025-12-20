@@ -1,0 +1,192 @@
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+/* ===== Container ===== */
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 520px;
+    padding: 30px 35px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ===== Heading ===== */
+.container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4b3f72;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* ===== Form ===== */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #764ba2;
+    box-shadow: 0 0 0 2px rgba(118, 75, 162, 0.15);
+}
+
+/* ===== Button ===== */
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(118, 75, 162, 0.35);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(118, 75, 162, 0.25);
+}
+
+/* ===== Popup Overlay ===== */
+.result {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    animation: fadeOverlay 0.3s ease-in-out;
+}
+
+/* ===== Popup Card ===== */
+.result-card {
+    background: #ffffff;
+    padding: 32px 36px 28px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 440px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    animation: popupScale 0.35s ease;
+    position: relative;
+}
+
+/* ===== Close Button ===== */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+/* ===== Icons ===== */
+.result-icon {
+    font-size: 3.8rem;
+    margin-bottom: 10px;
+}
+
+/* ===== SUCCESS (No Cancellation) ===== */
+.result.success .result-card {
+    border-top: 7px solid #22c55e;
+    background: linear-gradient(180deg, #ecfdf5, #ffffff);
+    color: #166534;
+}
+
+.result.success .result-icon::after {
+    content: "😊";
+}
+
+/* ===== FAILURE (Cancellation) ===== */
+.result.failure .result-card {
+    border-top: 7px solid #ef4444;
+    background: linear-gradient(180deg, #fef2f2, #ffffff);
+    color: #7f1d1d;
+}
+
+.result.failure .result-icon::after {
+    content: "😠";
+}
+
+/* ===== Result Text ===== */
+.result-text {
+    margin-top: 12px;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+/* ===== Animations ===== */
+@keyframes popupScale {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOverlay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

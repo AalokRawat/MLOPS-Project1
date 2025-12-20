@@ -1,0 +1,7 @@
+.ven/
+mlruns/
+logs/
+MLOPS_PROJECT_1.egg-info/
+gcloud-service-access/
+.DS_Store
+Secret.txt
