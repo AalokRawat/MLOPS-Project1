@@ -1,4 +1,7 @@
-Run Docker Image -
+1. GCP Access -
+export GOOGLE_APPLICATION_CREDENTIALS=<<file_path>>
+
+2. Run Docker Image -
 
 docker network create jenkins
 
@@ -9,7 +12,6 @@ docker run --name jenkins-docker --rm --detach \
   --volume jenkins_home:/var/jenkins_home \
   --publish 2376:2376 \
   docker:dind --storage-driver overlay2
-
   
 docker run -d \
   --name jenkins-dind \
@@ -25,7 +27,7 @@ docker run -d \
   --volume jenkins-docker-certs:/certs/client:ro \
   jenkins-dind
 
-Install dependency -
+3. Install dependency -
 
 docker exec -u root -it jenkins-dind bash
 apt update -y
