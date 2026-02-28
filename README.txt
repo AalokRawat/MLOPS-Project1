@@ -42,3 +42,11 @@ exit
 Restart Jenkins -
 docker restart jenkins-dind
 
+Project Setup
+
+1. Create directory structure
+2. Create - requirements.txt and setup.py in root folder
+3. Run -
+ ptyhon3 -m venv .venv
+4. Run -
+ pip install -e .
